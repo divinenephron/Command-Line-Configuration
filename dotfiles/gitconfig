@@ -1,0 +1,11 @@
+[core]
+	editor = mate -w
+	excludesfile = /Users/devon/.gitignore
+[user]
+	name = Devon Buchanan
+	email = divinenephron@gmail.com
+[color]
+	status = auto
+	branch = auto
+[gui]
+	recentrepo = /Users/devon/Code/atom-smasher

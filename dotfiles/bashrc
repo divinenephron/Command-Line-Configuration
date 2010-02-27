@@ -1,0 +1,25 @@
+### Colors ###
+export TERM=xterm-color
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export CLICOLOR=1
+
+### History ###
+export HISTCONTROL=ignoredups
+#export HISTCONTROL=erasedups
+export HISTFILESIZE=3000
+export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll:lla"
+alias h=history
+
+### Gem Path ###
+export GEM_HOME=/Library/Ruby/Gems/1.8
+export GEM_PATH=/Library/Ruby/Gems/1.8:/Users/nephron/.gem/ruby/1.8
+
+### Editors ###
+export EDITOR="mvim"
+export VIM_APP_DIR="/Applications/Editors"
+
+### Completion ###
+if [ -f /opt/local/etc/bash_completion ]; then
+. /opt/local/etc/bash_completion
+fi
+

@@ -1,0 +1,7 @@
+set go-=T
+set guifont=Monaco:h10
+set bg=dark
+"if &background == "dark"
+"    hi normal guibg=black
+"endif
+

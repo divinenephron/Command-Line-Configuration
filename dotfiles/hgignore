@@ -1,0 +1,22 @@
+syntax: glob
+
+.DS_Store
+
+*.pyc
+*.zip
+*~
+
+*.swp
+*~.nib
+
+build
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+
+*.git
+.gitignore
+.DS_Store
+.settings

@@ -1,0 +1,8 @@
+set nocompatible
+
+"** Colors **"
+"set t_Co=256
+set background=dark
+syntax on
+colorscheme zenburn
+set hlsearch
