@@ -1,5 +1,5 @@
 set go-=T
-set guifont=Monaco:h10
+set guifont=Monaco:h12
 set bg=dark
 "if &background == "dark"
 "    hi normal guibg=black

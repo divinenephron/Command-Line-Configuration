@@ -1,8 +1,22 @@
 set nocompatible
 
-"** Colors **"
+" Colors
 "set t_Co=256
 set background=dark
 syntax on
+filetype plugin indent on
 colorscheme zenburn
 set hlsearch
+
+" Editing
+set aw				" save file when compliling, etc
+set backspace=indent,eol,start	" backspace over anything
+set expandtab			" use space, not tab characters
+set tabstop=4			" set tabs to a width of 4
+set softtabstop=4		" set soft tabs to a width of 4
+set shiftwidth=4		" shifts over whitespace in 4-s
+set autoindent			" turn on autoindenting
+set number              " turn on line numbers
+
+" Get Latest Vim Scripts
+let g:GetLatestVimScripts_allowautoinstall=1
