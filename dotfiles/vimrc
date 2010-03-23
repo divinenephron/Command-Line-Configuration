@@ -20,3 +20,9 @@ set number              " turn on line numbers
 
 " Get Latest Vim Scripts
 let g:GetLatestVimScripts_allowautoinstall=1
+
+" Latex Suite
+" Force grep to always display the filename to avoid confusing Latex Suite
+set grepprg=grep\ -nH\ $*
+" Load .tex files as latex, not plaintex
+let g:tex_flavor='latex'

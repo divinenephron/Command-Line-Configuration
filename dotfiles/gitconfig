@@ -1,11 +1,9 @@
 [core]
-	editor = mate -w
-	excludesfile = /Users/devon/.gitignore
+	editor = gvim -f
+	excludesfile = /Users/nephron/.gitexcludes
 [user]
 	name = Devon Buchanan
 	email = divinenephron@gmail.com
 [color]
 	status = auto
 	branch = auto
-[gui]
-	recentrepo = /Users/devon/Code/atom-smasher
