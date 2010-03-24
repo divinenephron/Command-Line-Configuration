@@ -1,19 +1,26 @@
-### Paths ###
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
-# bin folders
-if [ -d ~/bin ]; then
-	export PATH=:~/bin:$PATH  # add your bin folder to the path
-fi
-if [ -d ~/.cl/bin ]; then
-	export PATH=:~/.cl/bin:$PATH  # add your cl/bin folder to the path
-fi
-# MySQL
-export PATH=$PATH:/usr/local/mysql/bin
-
 ### BASHRC ###
 source ~/.bashrc
+
+### Colors ###
+export TERM=xterm-color
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export CLICOLOR=1
+
+### History ###
+export HISTCONTROL=ignoredups
+export HISTCONTROL=erasedups
+export HISTFILESIZE=3000
+export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll:lla"
+alias h=history
+
+### Editors ###
+export EDITOR="gvim"
+export VIM_APP_DIR="/Applications/Editors"
+
+### Completion ###
+if [ -f /opt/local/etc/bash_completion ]; then
+. /opt/local/etc/bash_completion
+fi
 
 ### Notes ###
 # When you start an interactive shell (log in, open terminal or iTerm in OS X, 

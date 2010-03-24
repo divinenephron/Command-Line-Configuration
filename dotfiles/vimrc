@@ -9,7 +9,7 @@ colorscheme zenburn
 set hlsearch
 
 " Editing
-set aw				" save file when compliling, etc
+set autowrite			" save file when compiling, switching windows, etc.
 set backspace=indent,eol,start	" backspace over anything
 set expandtab			" use space, not tab characters
 set tabstop=4			" set tabs to a width of 4
@@ -18,11 +18,15 @@ set shiftwidth=4		" shifts over whitespace in 4-s
 set autoindent			" turn on autoindenting
 set number              " turn on line numbers
 
-" Get Latest Vim Scripts
-let g:GetLatestVimScripts_allowautoinstall=1
+" Use Rake
+set makeprg=rake
 
 " Latex Suite
 " Force grep to always display the filename to avoid confusing Latex Suite
 set grepprg=grep\ -nH\ $*
 " Load .tex files as latex, not plaintex
 let g:tex_flavor='latex'
+" Compile pdfs multiple times
+let g:Tex_MultipleCompileFormats+=',pdf'
+" Use XeLaTeX
+let g:Tex_CompileRule_pdf = 'xelatex --interaction=nonstopmode $*'
